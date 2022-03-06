@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="generator" content="Ukraine">
-    <title>Unterstützung der Ukraine</title>
+    <title>Support Ukraine</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
@@ -23,8 +23,35 @@
           font-size: 3.5rem;
         }
       }
+
       .main {max-width: 960px;}
+      .help_options__item {
+          background-color: #fff;
+          border-radius: 10px;
+      }
+      .help_options__item__info h3 {
+        font-size: 1.5rem;
+      }
+      .help_options__item__donate__btns--visit {
+          text-align: center;
+      }
+      @media (max-width: 992px) {
+        .help_options__item__logo {
+            text-align:center;
+        }
+        .help_options__item__logo img {
+            max-height:200px;
+        }
+      }
     </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FBV6Z75LDP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FBV6Z75LDP');
+    </script>
   </head>
   <body class="bg-light">
     
@@ -32,9 +59,36 @@
   <div class="row">
     <div class="col-sm-12">
         <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" style="border-radius:10px" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg" alt="" width="72" height="57">
-        <h2>Support Ukraine</h2>
-        <p class="lead">Support Ukraine in it's defense against Russian aggression.</p>
+        <img class="d-block mx-auto mb-4" style="border-radius:10px" src="./static/images/flag_ukraine.svg" alt="" width="72" height="57">
+        <h1>Support Ukraine</h1>
+        <p class="lead">This is how you can support Ukraine from Germany</p>
+        </div>
+    </div>
+    <div class="col-sm-12 help_options">
+        <div class="row">
+            <div class="col-sm-12 help_options__cat mb-3">
+                <h2 class="mb-0 mb-lg-3 d-sm-block d-lg-inline">In Düsseldorf helfen</h2>
+                <h3 class="mb-0 mb-lg-3 d-sm-block d-lg-inline" style="color:#616161"><span class="d-none d-lg-inline"> / </span>Help in Düsseldorf</h3>
+            </div>
+            <div class="col-sm-12 help_options__item py-4 px-3">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-3 help_options__item__logo d-lg-flex align-items-center">
+                        <img src="./static/images/ridne_slovo_logo.png" class="img-fluid" alt="Ridne Slovo e.V.">
+                    </div>
+                    <div class="col-sm-12 col-lg-7 help_options__item__info">
+                        <h3>Ridne Slowo e.V.</h3>
+                        <div class="w-100">
+                            Ridne Slowo e.V. ist ein junger und dynamischer Verein, gegründet in 2019 von den Ukrainerinnen und Ukrainern. Zusammen mit der Gemeinde der Ukrainisch-Katholischen Kirche in Düsseldorf und mit Unterstützung des Generalkonsulats der Ukraine in Düsseldorf unterstützen wir die Ukraine.
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2 mt-3 mt-lg-0 help_options__item__donate d-flex align-items-center justify-content-center">
+                        <div class="help_options__item__donate__btns d-flex flex-column">
+                            <a class="btn btn-primary" href="https://ridneslowo.de/de/" role="button" style="min-width:100px" target="_blank">Donate</a>
+                            <a class="help_options__item__donate__btns--visit mt-2" target="_blank" rel="nofollow" href="https://ridneslowo.de/de/">Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   </div>
